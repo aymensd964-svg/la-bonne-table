@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>La Bonne Table — Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+	
+	</style>
+</head>
+<body>
+
+	<!-- HEADER -->
+	<header id="siteHeader">
+		<div class="container">
+			<nav>
+				<div class="brand">La Bonne Table</div>
+				<div class="menu-toggle" id="menuToggle">
+					<span></span><span></span><span></span>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<a href="#menu">Menu</a>
+					<a href="#about">About</a>
+					<a href="#gallery">Gallery</a>
+					<a href="#reserve">Reserve</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- HERO -->
+	<section class="hero">
+		<div class="hero-particles" id="heroParticles"></div>
+		<h1>Seasonal <span>French-inspired</span> Dining</h1>
+		<p>Locally sourced ingredients, crafted into simple dishes with bold flavor and timeless elegance.</p>
+		<a class="btn" href="#reserve">Book a Table</a>
+		<div class="scroll-indicator">
+			<span>Explore</span>
+			<div class="scroll-line"></div>
+		</div>
+	</section>
+
+	<!-- MAIN CONTENT -->
+	<main class="container">
+		<div class="content-grid">
+			<div>
+				<!-- MENU -->
+				<section id="menu" class="card reveal">
+					<h2>Our Menu</h2>
+					<div class="divider" style="width:40px;height:1.5px;margin:10px 0 20px;background:linear-gradient(90deg,var(--gold),transparent)"></div>
+					<div class="menu-grid">
+						<div class="menu-category">
+							<h3><span class="icon">🥗</span> Starters</h3>
+							<div class="menu-item">
+								<img src="Goat Cheese Salad.jpg" alt="Goat Cheese Salad" class="menu-thumb">
+								<div class="desc">Goat Cheese Salad</div>
+								<div class="price">$9</div>
+							</div>
+							<div class="menu-item">
+								<img src="Seasonal Vegetable Tart.jpg" alt="Seasonal Vegetable Tart" class="menu-thumb">
+								<div class="desc">Seasonal Vegetable Tart</div>
+								<div class="price">$10</div>
+							</div>
+							<div class="menu-item">
+								<img src="Chef's Dessert.jpg" alt="Chef's Dessert" class="menu-thumb">
+								<div class="desc">Chef's Dessert</div>
+								<div class="price">$7</div>
+							</div>
+						</div>
+						<div class="menu-category">
+							<h3><span class="icon">🍽️</span> Mains</h3>
+							<div class="menu-item">
+								<img src="Chicken Skewers.webp" alt="Chicken Skewers" class="menu-thumb">
+								<div class="desc">Chicken Skewers</div>
+								<div class="price">$18</div>
+							</div>
+							<div class="menu-item">
+								<img src="Mushroom Risotto.jpg" alt="Mushroom Risotto" class="menu-thumb">
+								<div class="desc">Mushroom Risotto</div>
+								<div class="price">$16</div>
+							</div>
+							<div class="menu-item">
+								<img src="Braised Lamb.jpg" alt="Braised Lamb" class="menu-thumb">
+								<div class="desc">Braised Lamb</div>
+								<div class="price">$20</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- ABOUT -->
+				<section id="about" class="card about-section reveal" style="margin-top:24px">
+					<h2>About Us</h2>
+					<div class="divider" style="width:40px;height:1.5px;margin:10px 0 20px;background:linear-gradient(90deg,var(--gold),transparent)"></div>
+					<p>La Bonne Table is a neighborhood bistro celebrating seasonal produce and classic techniques. We offer a relaxed dining experience with thoughtful wine pairings and daily specials that reflect the best of what the season has to offer.</p>
+					<div class="about-features">
+						<div class="about-feature">🍷 Wine Pairings</div>
+						<div class="about-feature">🌿 Farm-to-Table</div>
+						<div class="about-feature">👨‍🍳 Daily Specials</div>
+						<div class="about-feature">🎶 Live Jazz</div>
+					</div>
+				</section>
+
+				<!-- GALLERY -->
+				<section id="gallery" class="card reveal" style="margin-top:24px">
+					<h2>Gallery</h2>
+					<p class="small" style="margin-bottom:16px">A few highlights from our kitchen and dining room — click to enlarge.</p>
+					<div class="gallery">
+						<img src="Goat Cheese Salad.jpg" alt="Goat Cheese Salad" class="thumbnail" data-full="Goat Cheese Salad.jpg">
+						<img src="Seasonal Vegetable Tart.jpg" alt="Seasonal Vegetable Tart" class="thumbnail" data-full="Seasonal Vegetable Tart.jpg">
+						<img src="Chef's Dessert.jpg" alt="Chef's Dessert" class="thumbnail" data-full="Chef's Dessert.jpg">
+						<img src="Chicken Skewers.webp" alt="Chicken Skewers" class="thumbnail" data-full="Chicken Skewers.webp">
+						<img src="Mushroom Risotto.jpg" alt="Mushroom Risotto" class="thumbnail" data-full="Mushroom Risotto.jpg">
+						<img src="Braised Lamb.jpg" alt="Braised Lamb" class="thumbnail" data-full="Braised Lamb.jpg">
+					</div>
+				</section>
+			</div>
+
+			<!-- SIDEBAR -->
+			<aside>
+				<!-- RESERVE -->
+				<div id="reserve" class="card reveal">
+					<h2>Reserve a Table</h2>
+					<p class="small" style="margin-bottom:18px">Fill in your details and we'll confirm availability.</p>
+					<form id="reserveForm">
+						<div class="form-group">
+							<label for="name">Name</label>
+							<input id="name" name="name" required placeholder="Your full name">
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" required placeholder="you@email.com">
+						</div>
+						<div class="form-row">
+							<div class="form-group">
+								<label for="date">Date</label>
+								<input id="date" name="date" type="date" required>
+							</div>
+							<div class="form-group">
+								<label for="time">Time</label>
+								<input id="time" name="time" type="time" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="guests">Guests</label>
+							<select id="guests" name="guests" required>
+								<option value="1">1 Guest</option>
+								<option value="2" selected>2 Guests</option>
+								<option value="3">3 Guests</option>
+								<option value="4">4 Guests</option>
+								<option value="5">5+ Guests</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="notes">Notes (optional)</label>
+							<textarea id="notes" name="notes" rows="3" placeholder="Special requests, allergies, etc."></textarea>
+						</div>
+						<button class="btn" type="submit" style="width:100%;justify-content:center;margin-top:8px">
+							Request Reservation
+						</button>
+					</form>
+				</div>
+
+				<!-- HOURS -->
+				<div class="card hours-card reveal" style="margin-top:16px">
+					<h3>Hours</h3>
+					<div class="hours-line">
+						<span class="day">Tuesday – Sunday</span>
+						<span class="time">5:00 PM – 11:00 PM</span>
+					</div>
+					<div class="hours-line">
+						<span class="day">Monday</span>
+						<span class="time" style="color:var(--text-muted)">Closed</span>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2026 La Bonne Table — 123 Flavor St, Food City &nbsp;·&nbsp; <a href="#reserve">Reservations</a></p>
+		</div>
+	</footer>
+
+	<!-- IMAGE MODAL -->
+	<div id="imgModal" class="img-modal" aria-hidden="true">
+		<div class="close" id="imgModalClose">✕</div>
+		<img id="imgModalImg" src="" alt="">
+	</div>
+
+	<script defer>
+		/* ===== HEADER SCROLL ===== */
+		const header = document.getElementById('siteHeader');
+		window.addEventListener('scroll', () => {
+			header.classList.toggle('scrolled', window.scrollY > 50);
+		});
+
+		/* ===== MOBILE MENU ===== */
+		const menuToggle = document.getElementById('menuToggle');
+		const navLinks = document.getElementById('navLinks');
+		menuToggle && menuToggle.addEventListener('click', () => {
+			navLinks.classList.toggle('open');
+		});
+		navLinks && navLinks.querySelectorAll('a').forEach(a => {
+			a.addEventListener('click', () => navLinks.classList.remove('open'));
+		});
+
+		/* ===== HERO PARTICLES ===== */
+		const particlesContainer = document.getElementById('heroParticles');
+		for (let i = 0; i < 30; i++) {
+			const p = document.createElement('div');
+			p.className = 'hero-particle';
+			p.style.left = Math.random() * 100 + '%';
+			p.style.animationDuration = (4 + Math.random() * 8) + 's';
+			p.style.animationDelay = Math.random() * 6 + 's';
+			p.style.width = p.style.height = (1 + Math.random() * 2) + 'px';
+			particlesContainer.appendChild(p);
+		}
+
+		/* ===== SCROLL REVEAL ===== */
+		const revealEls = document.querySelectorAll('.reveal');
+		const revealObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+					revealObserver.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+		revealEls.forEach(el => revealObserver.observe(el));
+
+		/* ===== RESERVATION FORM ===== */
+		function handleReserve(e) {
+			e.preventDefault();
+			const name = document.getElementById('name').value.trim();
+			const date = document.getElementById('date').value;
+			const time = document.getElementById('time').value;
+			if (!name || !date || !time) {
+				showToast('Please complete all required fields.', 'error');
+				return false;
+			}
+			showToast('Thanks, ' + name + '! We received your reservation for ' + date + ' at ' + time + '. We\'ll confirm by email.', 'success');
+			e.target.reset();
+			return false;
+		}
+		document.addEventListener('DOMContentLoaded', function () {
+			const form = document.getElementById('reserveForm');
+			if (form) form.addEventListener('submit', handleReserve);
+		});
+
+		/* ===== TOAST NOTIFICATION ===== */
+		function showToast(msg, type) {
+			const existing = document.querySelector('.toast');
+			if (existing) existing.remove();
+			const toast = document.createElement('div');
+			toast.className = 'toast toast-' + type;
+			toast.textContent = msg;
+			toast.style.cssText = 'position:fixed;top:90px;right:24px;z-index:300;max-width:380px;padding:14px 22px;border-radius:12px;font-size:0.88rem;font-family:Inter,sans-serif;line-height:1.5;animation:slideIn 0.4s ease both;';
+			if (type === 'success') {
+				toast.style.background = 'rgba(34,50,34,0.95)';
+				toast.style.border = '1px solid rgba(201,169,110,0.4)';
+				toast.style.color = '#e0c992';
+			} else {
+				toast.style.background = 'rgba(50,22,22,0.95)';
+				toast.style.border = '1px solid rgba(200,80,80,0.4)';
+				toast.style.color = '#e88';
+			}
+			document.body.appendChild(toast);
+			setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(30px)'; toast.style.transition = '0.3s ease'; }, 3500);
+			setTimeout(() => toast.remove(), 4000);
+		}
+
+		/* ===== IMAGE MODAL ===== */
+		document.addEventListener('DOMContentLoaded', function () {
+			const modal = document.getElementById('imgModal');
+			const modalImg = document.getElementById('imgModalImg');
+			const modalClose = document.getElementById('imgModalClose');
+
+			function openModal(src, alt) {
+				if (!modal) return;
+				modalImg.src = src;
+				modalImg.alt = alt || '';
+				modal.classList.add('open');
+				modal.setAttribute('aria-hidden', 'false');
+				document.body.style.overflow = 'hidden';
+			}
+
+			function closeModal() {
+				if (!modal) return;
+				modal.classList.remove('open');
+				modal.setAttribute('aria-hidden', 'true');
+				document.body.style.overflow = '';
+				setTimeout(() => { modalImg.src = ''; }, 400);
+			}
+
+			modalClose && modalClose.addEventListener('click', closeModal);
+			modal && modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+			document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+
+			document.querySelectorAll('.thumbnail').forEach(img => {
+			img.addEventListener('click', () => openModal(img.dataset.full || img.src, img.alt));
+			});
+		});
+	</script>
+</body>
+</html>
